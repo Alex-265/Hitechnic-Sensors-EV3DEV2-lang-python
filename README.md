@@ -41,5 +41,5 @@ Note that the HitechnicCompass class has methods to start and stop calibration. 
 
 If you have any issues with this library, please feel free to create an issue on the GitHub repository:
 
-https://github.com/alexander-neumeier/Hitechnic-Sensors-EV3DEV2-lang-python
+[https://github.com/alexander-neumeier/Hitechnic-Sensors-EV3DEV2-lang-python](https://github.com/alexander-neumeier/Hitechnic-Sensors-EV3DEV2-lang-python/issues)
 License

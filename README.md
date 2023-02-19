@@ -1,28 +1,45 @@
 # Hitechnic-Sensors-EV3DEV2-lang-python
 
-This python script reads the output of the Hitechnic IrSeekerV2 and the Hitechnic Compass Sensor.
+A Python library for working with Hitechnic sensors on the EV3DEV2 platform.
+## Installation
 
-**How to use**
+This library requires the ev3dev2 Python package to be installed on your system. You can install it using the following command:
 ```
-from hisensors import hitechnicIrSeekerV2
-from hisensors import hitechnicCompass
+pip install python-ev3dev2
 ```
-Compass Sensor
-Calibrate Start
-```
-hisensors.hitechnicCompass.startCalibration()
-```
+Once ev3dev2 is installed, you can download the Hitechnic-Sensors-EV3DEV2-lang-python
 
-Calibrate Stop
-```
-hisensors.hitechnicCompass.stopCalibration()
-```
+## Usage
 
-Read Data from IrSeeker
+To use the library in your Python script, you can import the sensor classes as follows:
+
 ```
-hitechnicIrSeekerV2.direction
+from Hitechnic_Sensors_EV3DEV2_lang_python import HitechnicIrSeekerV2, HitechnicCompass
 ```
-Read Data from Compass Sensor
+Then, you can create instances of the sensor classes and use their methods to read sensor values:
+
+
 ```
-compass = hitechnicCompass.rotation
+# create instances of the sensor classes
+ir_seeker = HitechnicIrSeekerV2()
+compass = HitechnicCompass()
+
+# start calibration of the compass
+compass.start_calibration()
+
+# read the current rotation value of the compass
+rotation = compass.read_rotation()
+
+# read the current direction value of the IR seeker
+direction = ir_seeker.read_direction()
+
+# stop calibration of the compass
+compass.stop_calibration()
 ```
+Note that the HitechnicCompass class has methods to start and stop calibration. These methods must be used to calibrate the compass before using its read_rotation method.
+### Support
+
+If you have any issues with this library, please feel free to create an issue on the GitHub repository:
+
+https://github.com/your-username/Hitechnic-Sensors-EV3DEV2-lang-python
+License

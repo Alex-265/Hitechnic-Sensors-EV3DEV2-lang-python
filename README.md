@@ -14,7 +14,7 @@ Once ev3dev2 is installed, you can download the Hitechnic-Sensors-EV3DEV2-lang-p
 To use the library in your Python script, you can import the sensor classes as follows:
 
 ```
-from Hitechnic_Sensors_EV3DEV2_lang_python import HitechnicIrSeekerV2, HitechnicCompass
+from hisensors import HitechnicIrSeekerV2, HitechnicCompass
 ```
 Then, you can create instances of the sensor classes and use their methods to read sensor values:
 
